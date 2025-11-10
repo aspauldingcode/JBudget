@@ -12,6 +12,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: none
   - GUI: none
   - Deliverable: JDK 25 recognized, `Main` runs; IDE/Maven aligned.
+  - Micro-Exercises:
+    - Implement `EnvironmentCheck.printInfo()` that prints Java version, Maven (if available), and project path.
+    - Add one line in `Main` invoking `EnvironmentCheck.printInfo()` and confirm it runs.
+    - Write a short README note about your setup and any issues found.
 
 ### Week 02 — Basics (types, variables, I/O)
   - Package: `week02_basics`
@@ -19,6 +23,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: primitives, `String`
   - GUI: none
   - Deliverable: Console demos for basic types and I/O.
+  - Micro-Exercises:
+    - Build `InputDemo` using `Scanner` to read an amount and a category, then echo them.
+    - Create `MathDemo.sumAndAverage(int...)` and print results for a sample array.
+    - Implement `StringDemo.formatCurrency(double)` that returns a currency-like string.
 
 ### Week 03 — Control Flow
   - Package: `week03_control_flow`
@@ -26,6 +34,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: menu states (enums)
   - GUI: none
   - Deliverable: Prototype console menu to add/view dummy transactions.
+  - Micro-Exercises:
+    - Implement a loop-driven `ConsoleMenu` with options: Add, List, Quit.
+    - Write `ValidationUtils.isPositiveAmount(double)` and `isNonEmpty(String)`; use them in the menu.
+    - Simulate adding two hardcoded transactions and list them back.
 
 ### Week 04 — Methods & Recursion
   - Package: `week04_methods_recursion`
@@ -33,6 +45,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: `LocalDate`
   - GUI: none
   - Deliverable: Utility methods used by later modules.
+  - Micro-Exercises:
+    - Implement `DateUtils.daysBetween(LocalDate a, LocalDate b)` and print for a sample range.
+    - Implement `AmountUtils.roundToCents(BigDecimal)` and demonstrate on 3 inputs.
+    - Write `RecursionExamples.factorial(int)` with base case and print factorial of 5.
 
 ### Week 05 — OOP Basics
   - Package: `week05_oop_basics`
@@ -40,6 +56,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: `List<Account>` in `User`
   - GUI: none
   - Deliverable: Users can hold multiple accounts (no transactions yet).
+  - Micro-Exercises:
+    - Create `Account` with `deposit(double)` and `withdraw(double)` that update balance with validation.
+    - Create `User` that aggregates accounts and a method to compute total balance.
+    - In `Main`, create a user with two accounts and print the total.
 
 ### Week 06 — Encapsulation
   - Package: `week06_encapsulation`
@@ -47,6 +67,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: `Map<Category, Budget>`
   - GUI: none
   - Deliverable: Safe setters/getters; validated budget amounts.
+  - Micro-Exercises:
+    - Implement `Money` as a value type backed by cents (long) with `ofDollars(BigDecimal)` and `toBigDecimal()`.
+    - Ensure `Budget` validates non-negative allocations and hides mutable internals.
+    - Write a small demo that sets/get budgets per `Category` and prints totals.
 
 ### Week 07 — Inheritance & Polymorphism
   - Package: `week07_inheritance_polymorphism`
@@ -54,6 +78,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: `List<Transaction>` per `Account`
   - GUI: none
   - Deliverable: Polymorphic transaction hierarchy (classic OOP).
+  - Micro-Exercises:
+    - Define abstract `Transaction` with common fields (date, amount, memo) and `apply(Account)`.
+    - Implement `Income`, `Expense`, `Transfer` with specialized `apply` logic.
+    - Create a list of mixed transactions and iteratively apply to an account; print final balance.
 
 ### Week 08 — Collections
   - Package: `week08_collections`
@@ -61,6 +89,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: `Map<String, Account>`, `List<Transaction>`
   - GUI: none
   - Deliverable: Efficient storage/retrieval patterns with collections.
+  - Micro-Exercises:
+    - Implement `TransactionRepository` with `add`, `findByAccount(String)`, `findByCategory(Category)`.
+    - Build `InMemoryDatabase` storing accounts and transactions using `Map`/`List`.
+    - Demonstrate two queries and print results.
 
 ### Week 09 — Generics
   - Package: `week09_generics`
@@ -68,6 +100,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: typed repositories
   - GUI: none
   - Deliverable: Reusable generic abstractions.
+  - Micro-Exercises:
+    - Implement `Result<T>` with `success(T)` and `failure(String)`; add `map` and `flatMap`.
+    - Define `Repository<TId, TEntity>` and implement `AccountRepository` using generics.
+    - Show `Result<List<Transaction>>` returned from a query.
 
 ### Week 10 — Lambdas
   - Package: `week10_lambdas`
@@ -75,6 +111,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: predicates and comparators
   - GUI: none
   - Deliverable: Lambda-powered filtering and sorting.
+  - Micro-Exercises:
+    - Define `TransactionFilter` and compose two predicates (e.g., amount > X and category == Y).
+    - Sort transactions by date, then by amount using `Comparator` and print the first 3.
+    - Implement a simple callback that runs after filtering to print a summary.
 
 ### Week 11 — Streams & Optional
   - Package: `week11_streams_optional`
@@ -82,6 +122,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: stream pipelines, `Optional<Budget>`
   - GUI: none
   - Deliverable: Monthly/category summaries and aggregations.
+  - Micro-Exercises:
+    - Implement `ReportService.monthlySpendByCategory(List<Transaction>)` using streams.
+    - Use `Optional<Budget>` for `findBudget(Category)`; demonstrate `orElse` and `orElseThrow`.
+    - Build a `Summary` from a stream reduction and print top categories.
 
 ### Week 12 — Records & Sealed Types
   - Package: `week12_records_sealed`
@@ -90,6 +134,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: immutable transaction snapshots
   - GUI: none
   - Deliverable: Modern immutable models alongside classic OOP types.
+  - Micro-Exercises:
+    - Define the `TxRecord` sealed interface and the three record implementations.
+    - Write a converter from `Transaction` to `TxRecord` and back where applicable.
+    - Use a `switch` on `TxRecord` type to format a line of output.
 
 ### Week 13 — Pattern Matching, Switch Expressions, Text Blocks
   - Package: `week13_pattern_matching_textblocks`
@@ -97,6 +145,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: text block templates
   - GUI: none
   - Deliverable: Pretty-printed reports using modern control flow.
+  - Micro-Exercises:
+    - Implement a `switch` expression over transaction types to produce a formatted string.
+    - Create a multi-line text block template for a summary report and fill tokens.
+    - Demonstrate pattern matching with `instanceof` or `switch` for `TxRecord` variants.
 
 ### Week 14 — File I/O
   - Package: `week14_file_io`
@@ -104,6 +156,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: CSV rows for accounts/transactions
   - GUI: none
   - Deliverable: Export/import basic data.
+  - Micro-Exercises:
+    - Implement `CsvExporter` writing two transactions to a `transactions.csv` using `Files.newBufferedWriter`.
+    - Implement `CsvImporter` reading `transactions.csv` and reconstructing transactions.
+    - Print the imported list to confirm round-trip.
 
 ### Week 15 — Serialization & JSON (Jackson)
   - Package: `week15_serialization_json`
@@ -111,6 +167,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: JSON files; DTO records
   - GUI: none
   - Deliverable: Persist and restore app state.
+  - Micro-Exercises:
+    - Implement `JsonStore.save(AppState)` and `load()` using Jackson.
+    - Create a simple DTO record for transactions and map from domain to DTO.
+    - Save state, clear in-memory data, then load and print a confirmation.
 
 ### Week 16 — Threads & Executors
   - Package: `week16_threads_executors`
@@ -118,6 +178,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: thread-safe collections
   - GUI: none
   - Deliverable: Concurrent transaction simulation.
+  - Micro-Exercises:
+    - Start an `ExecutorService` and submit 5 tasks that append transactions to a thread-safe list.
+    - Implement a `Callable<Summary>` that computes totals asynchronously and prints the result.
+    - Shut down the executor cleanly.
 
 ### Week 17 — Structured Concurrency
   - Package: `week17_structured_concurrency`
@@ -125,6 +189,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: scoped tasks
   - GUI: none
   - Deliverable: Clean orchestration of background jobs.
+  - Micro-Exercises:
+    - Orchestrate two tasks (fetch rates, compute report) with `CompletableFuture` or `StructuredTaskScope` if enabled.
+    - Combine results and handle timeouts or failures gracefully.
+    - Print a final summary when both tasks complete.
 
 ### Week 18 — JavaFX Basics
   - Package: `week18_javafx_basics`
@@ -132,6 +200,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Classes: `AppLauncher` (JavaFX), `ViewModel` stubs
   - Data: observable lists
   - Deliverable: GUI skeleton launches.
+  - Micro-Exercises:
+    - Create a `MainWindow` with a button and a list view bound to sample data.
+    - Wire the button to append an item to the list.
+    - Verify the app launches without errors.
 
 ### Week 19 — JavaFX Events
   - Package: `week19_javafx_events`
@@ -139,6 +211,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Classes: `EventHandlers`, `FormValidators`
   - Data: bound properties
   - Deliverable: Interactive forms wired to view models.
+  - Micro-Exercises:
+    - Build a simple form with text fields for amount and memo; add and clear actions.
+    - Implement validation bindings to disable submit until inputs are valid.
+    - Show a confirmation label when a transaction is added.
 
 ### Week 20 — JavaFX Tables & Charts
   - Package: `week20_javafx_tables_charts`
@@ -146,6 +222,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Classes: `TableAdapters`, `ChartSeriesBuilder`
   - Data: observable table models
   - Deliverable: Visual summaries and lists.
+  - Micro-Exercises:
+    - Populate a `TableView<Transaction>` and enable sorting by amount/date.
+    - Build a `PieChart` or `BarChart` summarizing spend per category.
+    - Add a toggle to switch between table and chart views.
 
 ### Week 21 — GUI Integration
   - Package: `week21_gui_integration`
@@ -153,6 +233,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Classes: `Controllers`, `Bindings`
   - Data: application state model
   - Deliverable: Functional end-to-end UI.
+  - Micro-Exercises:
+    - Wire save/load buttons to `JsonStore` and confirm round-trip.
+    - Bind a summary label to `ReportService` output and refresh on changes.
+    - Hook up form submission to update the table and chart.
 
 ### Week 22 — HttpClient
   - Package: `week22_httpclient`
@@ -160,6 +244,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: remote JSON parsing
   - GUI: optional rates widget
   - Deliverable: External data fetch.
+  - Micro-Exercises:
+    - Use `HttpClient` to GET `https://api.exchangerate.host/latest?base=USD` and parse a couple of fields.
+    - Expose a method `convert(BigDecimal amount, String currency)` using the fetched rates.
+    - Print a sample conversion.
 
 ### Week 23 — Networking Integration
   - Package: `week23_network_integration`
@@ -167,6 +255,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: merged state
   - GUI: refresh controls
   - Deliverable: Remote data affects budgets and reports.
+  - Micro-Exercises:
+    - Implement `SyncService.refreshRates()` and apply to existing budgets.
+    - Update the UI to show last sync time and a refresh button.
+    - Print a before/after comparison for one category.
 
 ### Week 24 — Testing (JUnit)
   - Package: `week24_testing_junit`
@@ -174,6 +266,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: test fixtures
   - GUI: none
   - Deliverable: Reliable core logic with unit tests.
+  - Micro-Exercises:
+    - Write `Money` arithmetic tests (add, subtract, round) using JUnit 5.
+    - Test `Transaction.apply` for `Income`, `Expense`, `Transfer` with fixtures.
+    - Test `ReportService.monthlySpendByCategory` with a small dataset.
 
 ### Week 25 — Refactor & Modularization
   - Package: `week25_refactor_modularization`
@@ -181,6 +277,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - Data: layered structure (`domain`, `app`, `ui`)
   - GUI: none
   - Deliverable: Cleaner boundaries and maintainability.
+  - Micro-Exercises:
+    - Move classes into `domain`, `app`, `ui` packages; fix imports.
+    - Optionally create `module-info.java` and declare exports/opens.
+    - Identify one cyclic dependency and break it.
 
 ### Week 26 — Final Polish
   - Package: `week26_final_polish`
@@ -188,6 +288,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - GUI: theme tweaks, icons
   - Data: saved settings
   - Deliverable: Production-ready feel.
+  - Micro-Exercises:
+    - Add an app icon or small CSS tweak to improve UI.
+    - Implement a quick export/import command from the UI and verify.
+    - Generate a mini README section or a release note snippet programmatically.
 
 ### Week 27 — Final Release
   - Package: `week27_final_release`
@@ -195,6 +299,10 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
   - GUI: none
   - Data: final artifacts
   - Deliverable: Versioned release and portfolio.
+  - Micro-Exercises:
+    - Draft `ReleaseNotes` with highlights and known limitations.
+    - Tag the release and run packaging; confirm the runnable JAR.
+    - Attach a screenshot/GIF of the UI (if applicable) to the release.
 
 ## Working Notes
 - Keep `Main.java` runnable; use it to manually test weekly increments.
