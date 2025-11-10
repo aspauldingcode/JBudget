@@ -50,7 +50,7 @@ src/main/java/com/aspauldingcode/
   week27_final_release/
 ```
 
-Each package contains placeholder classes for weekly exercises and app modules. Implementation will be added as you progress with the PLAN.
+Each package contains placeholder classes for weekly exercises and app modules. Implementation will be added as you progress with the [PLAN](PLAN.md).
 
 ## Running
 - IntelliJ: Open the project, select the run config `JBudget (Main)`, click Run.
