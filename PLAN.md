@@ -202,6 +202,15 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
 - Prefer records and sealed interfaces for domain models when you get to Week 12.
 - Revisit earlier weeks to refactor with new features for deeper learning.
 
+### Packaging & Release (IntelliJ IDEA Community)
+- Configure JDK: File > Project Structure > Project SDK set to JDK 25; set Language level to 25.
+- Build the JAR: open the Maven tool window (View > Tool Windows > Maven), expand Lifecycle, run `package`. This produces `target/JBudget-1.0-SNAPSHOT.jar`.
+- Runnable JAR: the manifest is configured (Main-Class `com.aspauldingcode.Main`), so you can run `java -jar target/JBudget-1.0-SNAPSHOT.jar` from the IDE Terminal.
+- Tag the week: VCS > Git > Tag… create `week-NN` (e.g., `week-10`) and then VCS > Git > Push.
+- Create a release: in the IDE Terminal run `gh release create week-NN target/JBudget-1.0-SNAPSHOT.jar --title "Week NN — Title" --notes "Plan Link: https://github.com/aspauldingcode/JBudget/blob/master/PLAN.md#week-NN--<anchor>"`. Alternatively, create a release on GitHub and upload the JAR.
+- Optional naming: `cp target/JBudget-1.0-SNAPSHOT.jar target/JBudget-week-NN.jar` and attach the week-named JAR.
+- Release notes: include 2–5 bullets of highlights (features, tests, screenshots if UI).
+
 ## Next Actions
 - Fill week packages progressively using this PLAN.
 - Use README for high-level orientation; expand PLAN with checklists as needed.
