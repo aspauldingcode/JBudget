@@ -211,6 +211,138 @@ Below, each week lists the concrete classes/records, GUI elements (when applicab
 - Optional naming: `cp target/JBudget-1.0-SNAPSHOT.jar target/JBudget-week-NN.jar` and attach the week-named JAR.
 - Release notes: include 2–5 bullets of highlights (features, tests, screenshots if UI).
 
+## Learning Plan
+
+How to study effectively without relying on LLMs:
+- Start with official docs first, then tutorials, then practice tasks.
+- Take notes and write small, runnable examples for every concept.
+- Build micro-exercises each week that align with the week’s deliverable.
+- Revisit earlier code regularly to refactor with newer features.
+- Prefer reading and API exploration over passive watching; use videos for reinforcement.
+
+Core references
+- JDK 25 Documentation (API): `https://docs.oracle.com/en/java/javase/25/docs/api/`
+- Java Language Specification (SE 25): `https://docs.oracle.com/javase/specs/jls/se25/html/`
+- OpenJDK JEP Index: `https://openjdk.org/jeps/`
+- W3Schools Java: `https://www.w3schools.com/java/`
+- GeeksforGeeks Java: `https://www.geeksforgeeks.org/java/`
+- Baeldung Java: `https://www.baeldung.com/java-tutorial`
+- OpenJFX Docs: `https://openjfx.io/openjfx-docs/`
+- JUnit 5 User Guide: `https://junit.org/junit5/docs/current/user-guide/`
+
+Weekly study links
+- Week 01 — Setup
+  - JDK Install (Oracle): `https://www.oracle.com/java/technologies/downloads/`
+  - IntelliJ IDEA Community Setup: `https://www.jetbrains.com/help/idea/installation-guide.html`
+  - Maven Basics: `https://maven.apache.org/guides/getting-started/`
+
+- Week 02 — Basics, Types, Variables, IO
+  - W3Schools Java Basics: `https://www.w3schools.com/java/java_intro.asp`
+  - GeeksforGeeks Basics: `https://www.geeksforgeeks.org/java-programming-basics/`
+  - Standard IO: `https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/io/package-summary.html`
+
+- Week 03 — Control Flow
+  - If/Switch/Loops (GfG): `https://www.geeksforgeeks.org/decision-making-java-if-else-switch/`
+  - Switch Expressions (JEP 361): `https://openjdk.org/jeps/361`
+
+- Week 04 — Methods & Recursion
+  - Methods (W3Schools): `https://www.w3schools.com/java/java_methods.asp`
+  - Recursion (GfG): `https://www.geeksforgeeks.org/recursion/`
+
+- Week 05 — OOP Basics
+  - Classes/Objects (Oracle): `https://docs.oracle.com/javase/tutorial/java/concepts/`
+  - equals/hashCode (Baeldung): `https://www.baeldung.com/java-equals-hashcode-contract`
+
+- Week 06 — Encapsulation
+  - Access Modifiers (W3Schools): `https://www.w3schools.com/java/java_modifiers.asp`
+  - Immutability (Baeldung): `https://www.baeldung.com/java-immutable-objects`
+
+- Week 07 — Inheritance & Polymorphism
+  - Inheritance (W3Schools): `https://www.w3schools.com/java/java_inheritance.asp`
+  - Polymorphism (GfG): `https://www.geeksforgeeks.org/polymorphism-in-java/`
+
+- Week 08 — Collections
+  - Collections Framework (Oracle): `https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Collections.html`
+  - List/Set/Map (Baeldung): `https://www.baeldung.com/java-collections`
+
+- Week 09 — Generics
+  - Generics Guide (Oracle): `https://docs.oracle.com/javase/tutorial/java/generics/index.html`
+  - Wildcards (Baeldung): `https://www.baeldung.com/java-generics`
+
+- Week 10 — Lambdas
+  - Functional Interfaces: `https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/function/package-summary.html`
+  - Lambdas (Baeldung): `https://www.baeldung.com/java-8-lambda-expressions-tips`
+
+- Week 11 — Streams & Optional
+  - Streams API: `https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Stream.html`
+  - Optional: `https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/Optional.html`
+  - Streams (Baeldung): `https://www.baeldung.com/java-8-streams`
+
+- Week 12 — Records & Sealed Types
+  - Records (JLS §8.10): `https://docs.oracle.com/javase/specs/jls/se25/html/jls-8.html#jls-8.10`
+  - Sealed Classes (JEP 409): `https://openjdk.org/jeps/409`
+
+- Week 13 — Pattern Matching, Switch Expressions, Text Blocks
+  - Pattern Matching (JEP 432): `https://openjdk.org/jeps/432`
+  - Switch Expressions (JEP 361): `https://openjdk.org/jeps/361`
+  - Text Blocks (JEP 378): `https://openjdk.org/jeps/378`
+
+- Week 14 — File IO
+  - NIO.2 Files/Path: `https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Files.html`
+  - File IO (Baeldung): `https://www.baeldung.com/java-nio-2-file-api`
+
+- Week 15 — Serialization & JSON
+  - Jackson ObjectMapper: `https://github.com/FasterXML/jackson`
+  - Jackson Guide (Baeldung): `https://www.baeldung.com/jackson`
+
+- Week 16 — Threads & Executors
+  - Executors: `https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ExecutorService.html`
+  - Concurrency (Baeldung): `https://www.baeldung.com/java-concurrency`
+
+- Week 17 — Structured Concurrency
+  - Structured Concurrency (JEP 453): `https://openjdk.org/jeps/453`
+  - StructuredTaskScope (preview docs may vary): `https://openjdk.org/jeps/428`
+
+- Week 18 — JavaFX Basics
+  - OpenJFX Getting Started: `https://openjfx.io/openjfx-docs/`
+  - Tutorials (TutorialsEU/YouTube): `https://www.youtube.com/results?search_query=javafx+tutorial`
+
+- Week 19 — JavaFX Events
+  - Event Handling: `https://openjfx.io/javadoc/21/javafx.graphics/javafx/event/Event.html`
+  - Controls (GfG overview): `https://www.geeksforgeeks.org/javafx-introduction/`
+
+- Week 20 — JavaFX Tables & Charts
+  - TableView: `https://openjfx.io/javadoc/21/javafx.controls/javafx/scene/control/TableView.html`
+  - Charts: `https://openjfx.io/javadoc/21/javafx.controls/javafx/scene/chart/package-summary.html`
+
+- Week 21 — GUI Integration
+  - MVC & Controllers (Baeldung FX guide): `https://www.baeldung.com/javafx`
+  - Bindings/Properties: `https://openjfx.io/javadoc/21/javafx.base/javafx/beans/property/package-summary.html`
+
+- Week 22 — HttpClient
+  - HttpClient: `https://docs.oracle.com/en/java/javase/25/docs/api/java.net.http/java/net/http/HttpClient.html`
+  - HttpClient Guide (Baeldung): `https://www.baeldung.com/java-9-http-client`
+
+- Week 23 — Networking Integration
+  - JSON Parsing + Apply data (Jackson + domain): `https://www.baeldung.com/jackson`
+  - Error handling (GfG): `https://www.geeksforgeeks.org/exception-handling-in-java/`
+
+- Week 24 — Testing (JUnit)
+  - JUnit 5 User Guide: `https://junit.org/junit5/docs/current/user-guide/`
+  - AssertJ: `https://assertj.github.io/doc/`
+
+- Week 25 — Refactor & Modularization
+  - Java Modules: `https://openjdk.org/projects/jigsaw/`
+  - module-info basics (Baeldung): `https://www.baeldung.com/java-9-modularity`
+
+- Week 26 — Final Polish
+  - Javadoc: `https://docs.oracle.com/en/java/javase/25/docs/specs/javadoc/doc-comment-spec.html`
+  - Packaging tips: `https://maven.apache.org/plugins/`
+
+- Week 27 — Final Release
+  - Release notes best practices (GitHub): `https://docs.github.com/en/repositories/releasing-projects-on-github`
+  - Versioning: `https://semver.org/`
+
 ## Next Actions
 - Fill week packages progressively using this PLAN.
 - Use README for high-level orientation; expand PLAN with checklists as needed.
